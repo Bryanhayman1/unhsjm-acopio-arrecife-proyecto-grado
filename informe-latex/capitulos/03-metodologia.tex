@@ -1,2 +1,36 @@
 % Capítulo 3: Metodología
-% Propósito: Detallar el enfoque metodológico, diseño de investigación, técnicas e instrumentos de recolección de información y la metodología de desarrollo de software seleccionada.
+% Propósito: Detallar el enfoque metodológico, los informantes, las técnicas e instrumentos de recolección de información, las fases de desarrollo y el plan de trabajo.
+% Contenido: tomado del documento "TRABAJO DE CULMINACIÓN DE GRADO - AVANCES".
+
+\section{Metodología}
+
+La presente propuesta adopta un enfoque de Desarrollo Tecnológico Aplicado bajo un diseño no experimental basado en el diagnóstico de la situación actual, orientado a la resolución de una gestión operativa concreta en el Acopio «Arrecife». Desde la perspectiva de la Ingeniería de Software, el desarrollo de la plataforma web se guiará mediante la metodología ágil Scrum, la cual permite una construcción incremental estructurada en iteraciones operativas llamadas Sprints de dos semanas de duración \parencite{pressman2021}. Este enfoque ágil facilitará la revisión constante de los avances en el levantamiento de requisitos, el diseño de prototipos, la codificación de módulos y las pruebas con el personal del acopio.
+
+Para la recolección de datos e identificación de las necesidades del negocio y sus partes interesadas (stakeholders), se delimitaron tres niveles de informantes mediante un muestreo no probabilístico por conveniencia y criterio. En primer lugar, a nivel administrativo y operativo interno, se aplicará una Entrevista Semiestructurada dirigida a la administración del Acopio «Arrecife» (Karla Patricia Mora), complementada con una Guía de Observación Directa durante la recepción de productos en el local, registrando el flujo actual de pesaje, el almacenamiento en congeladores o termos con hielo y la anotación manual en pizarras y cuadernos. En segundo lugar, a nivel comercial B2B (negocio a negocio), se seleccionó una muestra intencional de seis establecimientos representativos del sector gastronómico y hotelero de San Juan del Sur; esta muestra fue fundamentada bajo un criterio de distribución geográfica y operativa, seleccionando tres locales ubicados en la franja costera de la bahía con alta rotación de platillos marinos diarios y tres locales situados en el casco urbano comercial con demanda hotelera y gastronómica regular. A estos informantes clave se les aplicará una Entrevista Semiestructurada para evaluar la consulta de stock en tiempo real, la diversificación de la demanda y la agilización del proceso de preventa. En tercer lugar, a nivel de consumidor final B2C (negocio a consumidor), se aplicará un cuestionario estructurado basado en una Encuesta de Aceptación Tecnológica evaluada mediante escala Likert de cinco puntos, a una muestra focalizada de 40 hogares del casco urbano del municipio, con el objetivo de medir la usabilidad esperada, la claridad del catálogo digital y la factibilidad del apartado de productos desde dispositivos móviles \parencite{davis1989,maldonado2021}.
+
+El ciclo de desarrollo tecnológico se estructurará formalmente en cuatro fases consecutivas. La Fase 1: Análisis de Requisitos se centrará en el mapeo de los flujos de trabajo actuales y la especificación de los casos de uso del sistema. Posteriormente, en la Fase 2: Diseño de Arquitectura, se construirá el Modelo Entidad-Relación para la base de datos relacional y se diagramará la estructura lógica del software bajo el patrón de Clean Architecture \parencite{martin2018}. Finalmente, la Fase 3: Construcción y Codificación abarcará la programación de la API REST (Backend), la interfaz (Frontend) y el repositorio central de datos, dando paso a la Fase 4: Pruebas y Validación, donde se ejecutarán pruebas de usabilidad, tiempo de respuesta y consistencia de inventario en tiempo real en conjunto con el personal del negocio para garantizar la correcta adopción de la herramienta. Y para finalizar, la Fase 5: Cierre, se llevará a cabo la capacitación al personal del Acopio «Arrecife» para garantizar la administración autónoma del sistema, la puesta en producción en el servidor en la nube y la entrega del informe final para la defensa de grado.
+
+\subsection{Plan de Trabajo}
+
+En la Tabla \ref{tab:plan-trabajo} se detallan las fases metodológicas del proyecto, las actividades principales de cada una, el entregable asociado y el período de ejecución previsto en meses.
+
+\begin{table}[H]
+  \centering
+  \caption{Fases, actividades y entregables del plan de trabajo}
+  \label{tab:plan-trabajo}
+  \begin{tabular}{>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{6.2cm} >{\raggedright\arraybackslash}p{3.8cm} >{\raggedright\arraybackslash}p{1.6cm}}
+    \toprule
+    \textbf{Fase metodológica} & \textbf{Actividades principales} & \textbf{Entregable asociado} & \textbf{Período (meses)} \\
+    \midrule
+    Fase I: Análisis de Requisitos & Levantamiento de requerimientos, entrevistas con personal del acopio e inspección de registros en cuaderno y encuestas al sector gastronómico y hogares. & Documento de Especificación de Requisitos de Software. & \\
+    \midrule
+    Fase II: Diseño de Arquitectura & Modelado de base de datos PostgreSQL, diseño de interfaces UI/UX y diagrama de Clean Architecture. & Documento de Arquitectura de Software y prototipos interactivos. & \\
+    \midrule
+    Fase III: Construcción y Codificación & Programación de la API REST, desarrollo de módulos de inventario, preventas, cobro flexible y reportes. & Código fuente del sistema web funcional. & \\
+    \midrule
+    Fase IV: Pruebas y Validación & Despliegue en entorno de pruebas, validación transaccional con el encargado y pruebas de usabilidad. & Reporte de pruebas y matriz de validación de usabilidad. & \\
+    \midrule
+    Fase V: Cierre & Capacitación al personal del acopio, despliegue final y redacción del informe de grado. & Documento final de Proyecto de Grado y sistema web desplegado. & \\
+    \bottomrule
+  \end{tabular}
+\end{table}
